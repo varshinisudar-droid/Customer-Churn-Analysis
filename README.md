@@ -153,7 +153,7 @@ The following analyses were performed:
 
 # 📸 Dashboard
 
-![Dashboard](dashboard.png)
+![Dashboard](Images/dashboard.png)
 
 ---
 
