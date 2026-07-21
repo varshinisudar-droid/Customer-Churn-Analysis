@@ -151,13 +151,9 @@ The following analyses were performed:
 
 ---
 
-#  Dashboard
+# 📸 Dashboard
 
-> Add your dashboard screenshot inside the `Images` folder and display it here.
-
-```markdown
-![Dashboard](Images/dashboard.png)
-```
+![Dashboard](dashboard.png)
 
 ---
 
