@@ -1,12 +1,12 @@
 # 📊 Customer Churn Analysis
 
-## 📌 Overview
+##  Overview
 
 This project focuses on analyzing customer churn in a telecom company using Python, SQL, and Power BI. The objective is to identify the major factors influencing customer churn and provide business recommendations to improve customer retention.
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 
 The goal of this project is to:
 
@@ -18,7 +18,7 @@ The goal of this project is to:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - Python
 - Pandas
@@ -32,7 +32,7 @@ The goal of this project is to:
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **Dataset:** Telco Customer Churn
 - **Records:** 7,043 Customers
@@ -54,7 +54,7 @@ Key attributes include:
 
 ---
 
-# 🔄 Project Workflow
+#  Project Workflow
 
 ```
 Raw Dataset
@@ -77,7 +77,7 @@ Business Insights
 
 ---
 
-# 🐍 Python Tasks Performed
+#  Python Tasks Performed
 
 - Imported dataset
 - Checked missing values
@@ -90,7 +90,7 @@ Business Insights
 
 ---
 
-# 🗄️ SQL Analysis
+#  SQL Analysis
 
 The following analyses were performed:
 
@@ -104,7 +104,7 @@ The following analyses were performed:
 
 ---
 
-# 📊 Power BI Dashboard
+#  Power BI Dashboard
 
 ### KPI Cards
 
@@ -131,7 +131,7 @@ The following analyses were performed:
 
 ---
 
-# 📈 Key Insights
+#  Key Insights
 
 - Customers with Month-to-Month contracts have the highest churn.
 - Fiber Optic customers show a higher churn rate than DSL users.
@@ -141,7 +141,7 @@ The following analyses were performed:
 
 ---
 
-# 💼 Business Recommendations
+#  Business Recommendations
 
 - Encourage customers to switch to long-term contracts.
 - Improve customer support for Fiber Optic users.
@@ -151,7 +151,7 @@ The following analyses were performed:
 
 ---
 
-# 📸 Dashboard
+#  Dashboard
 
 > Add your dashboard screenshot inside the `Images` folder and display it here.
 
@@ -161,7 +161,7 @@ The following analyses were performed:
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```
 Customer-Churn-Analysis/
@@ -176,7 +176,7 @@ Customer-Churn-Analysis/
 
 ---
 
-# 🚀 Skills Demonstrated
+#  Skills Demonstrated
 
 - Data Cleaning
 - Data Analysis
@@ -189,7 +189,7 @@ Customer-Churn-Analysis/
 
 ---
 
-# 👩‍💻 Author
+#  Author
 
 **Varshini A**
 
