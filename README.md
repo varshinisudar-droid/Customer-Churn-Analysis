@@ -153,9 +153,7 @@ The following analyses were performed:
 ---
 
 # 📸 Dashboard
-
-[Dashboard](https://github.com/varshinisudar-droid/Customer-Churn-Analysis/blob/main/Images/dashboard.png) ([image](https://github.com/varshinisudar-droid/Customer-Churn-Analysis/raw/main/Images/dashboard.png))
-
+Images/dashboard.png
 ---
 
 # Project Structure
