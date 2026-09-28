@@ -153,7 +153,7 @@ The following analyses were performed:
 ---
 
 # 📸 Dashboard
-Images/dashboard.png
+![dashboard]()
 ---
 
 # Project Structure
