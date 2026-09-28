@@ -1,194 +1,198 @@
-# 📊 Customer Churn Analysis
+# 🩺 CareTrack
 
-##  Overview
+## Overview
 
-This project focuses on analyzing customer churn in a telecom company using Python, SQL, and Power BI. The objective is to identify the major factors influencing customer churn and provide business recommendations to improve customer retention.
+CareTrack is a healthcare monitoring application developed as an academic Data Science project.
 
----
+It helps organize patient information, medical records, daily health check-ins, appointments, and longitudinal health patterns.
 
-##  Project Objective
-
-The goal of this project is to:
-
-- Clean and prepare customer data
-- Perform Exploratory Data Analysis (EDA)
-- Analyze customer churn using SQL
-- Build an interactive Power BI dashboard
-- Generate actionable business insights
+The system also includes OCR, basic medical text extraction, rule-based follow-up assessment, machine learning, and explainability.
 
 ---
 
-##  Tools & Technologies
+## Features
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- MySQL
-- SQL
-- Power BI
-- GitHub
-
----
-
-##  Dataset
-
-- **Dataset:** Telco Customer Churn
-- **Records:** 7,043 Customers
-- **Columns:** 21 Features
-
-Key attributes include:
-
-- Gender
-- Senior Citizen
-- Partner
-- Dependents
-- Tenure
-- Internet Service
-- Contract
-- Payment Method
-- Monthly Charges
-- Total Charges
-- Churn
+* Patient management
+* Medical record upload
+* OCR text extraction
+* Basic medical information extraction
+* Daily health check-ins
+* Health trend visualization
+* Appointment management
+* Patient timeline
+* Follow-up monitoring
+* Machine learning-based review attention
+* Explainability
+* Provider dashboard
 
 ---
 
-#  Project Workflow
+## Technologies Used
 
-```
-Raw Dataset
-      │
-      ▼
-Data Cleaning (Python)
-      │
-      ▼
-Exploratory Data Analysis (EDA)
-      │
-      ▼
-SQL Business Analysis
-      │
-      ▼
-Power BI Dashboard
-      │
-      ▼
-Business Insights
-```
+* Python
+* Streamlit
+* MySQL
+* Pandas
+* Plotly
+* Scikit-learn
+* PyMuPDF
+* Tesseract OCR
+* Pytesseract
+* Pillow
+* Joblib
 
 ---
 
-#  Python Tasks Performed
+# Project Structure
 
-- Imported dataset
-- Checked missing values
-- Cleaned data
-- Converted data types
-- Performed Exploratory Data Analysis
-- Calculated churn rate
-- Identified churn patterns
-- Generated business insights
-
----
-
-#  SQL Analysis
-
-The following analyses were performed:
-
-- Total Customers
-- Churn Rate
-- Contract Type Analysis
-- Internet Service Analysis
-- Payment Method Analysis
-- Monthly Charges Analysis
-- Tenure Analysis
-
----
-
-#  Power BI Dashboard
-
-### KPI Cards
-
-- Total Customers
-- Churned Customers
-- Churn Rate
-
-### Dashboard Visuals
-
-- Churn by Contract Type
-- Churn by Internet Service
-- Churn by Payment Method
-- Average Monthly Charges by Churn
-- Average Tenure by Churn
-- Churn by Gender
-- Churn by Senior Citizen
-- Churn by Partner Status
-
-### Slicers
-
-- Contract
-- Internet Service
-- Payment Method
-
----
-
-#  Key Insights
-
-- Customers with Month-to-Month contracts have the highest churn.
-- Fiber Optic customers show a higher churn rate than DSL users.
-- Electronic Check customers churn more frequently than customers using other payment methods.
-- Customers paying higher monthly charges are more likely to churn.
-- Customers with shorter tenure have a significantly higher churn rate.
-
----
-
-#  Business Recommendations
-
-- Encourage customers to switch to long-term contracts.
-- Improve customer support for Fiber Optic users.
-- Offer loyalty rewards to new customers.
-- Review the Electronic Check payment process.
-- Develop targeted retention campaigns for high-risk customers.
-
----
-
-# 📸 Dashboard
-
-![Dashboard](Images/dashboard.png)
-
----
-
-#  Project Structure
-
-```
-Customer-Churn-Analysis/
+```text
+CareTrack/
 │
-├── Data/
-├── Notebook/
-├── SQL/
-├── PowerBI/
-├── Images/
-├── README.md
+├── app/
+│   └── app.py
+│
+├── data/
+│   └── medical_records/
+│
+├── database/
+│   ├── db_connection.py
+│   └── update_database.py
+│
+├── models/
+│   ├── explainability.py
+│   ├── follow_up_logic.py
+│   ├── follow_up_model.py
+│   └── medical_nlp.py
+│
+├── notebooks/
+│   ├── train_follow_up_model.py
+│   └── test_follow_up.py
+│
+└── README.md
 ```
 
 ---
 
-#  Skills Demonstrated
+# Machine Learning
 
-- Data Cleaning
-- Data Analysis
-- Exploratory Data Analysis (EDA)
-- SQL Query Writing
-- Data Visualization
-- Dashboard Development
-- Business Intelligence
-- Data Storytelling
+CareTrack uses a Random Forest classifier as an academic prototype for identifying patient check-in patterns that may require healthcare-provider review.
+
+The model uses features such as:
+
+* Average mood
+* Average pain
+* Average sleep
+* High pain count
+* Low mood count
+* Low sleep count
+* Missed medication count
+
+The trained model is stored as:
+
+```text
+models/follow_up_model.pkl
+```
 
 ---
 
-#  Author
+# OCR and Medical NLP
+
+Medical documents can be uploaded to the application.
+
+The system uses Tesseract OCR to extract text from documents.
+
+The extracted text is then processed to identify basic:
+
+* Medications
+* Dates
+* Symptoms
+* Medical terms
+
+---
+
+# Database
+
+CareTrack uses MySQL.
+
+The main database tables are:
+
+* patients
+* medical_records
+* health_checkins
+* appointments
+
+---
+
+# How to Run
+
+Open Command Prompt and navigate to the project folder:
+
+```text
+cd /d "E:\Data Science Projects\CareTrack"
+```
+
+Activate the virtual environment:
+
+```text
+.venv\Scripts\activate.bat
+```
+
+Run the application:
+
+```text
+streamlit run app\app.py
+```
+
+---
+
+# Project Purpose
+
+The purpose of CareTrack is to demonstrate how Data Science can be applied to healthcare monitoring using structured data, OCR, NLP, visualization, machine learning, and explainability.
+
+---
+
+# Limitations
+
+This project is an academic prototype.
+
+The machine learning labels are based on predefined monitoring rules and are not based on clinically validated outcomes.
+
+The system does not diagnose diseases or provide treatment recommendations.
+
+OCR and medical text extraction may also produce errors depending on document quality.
+
+---
+
+# Future Enhancements
+
+* Advanced medical NLP
+* Named Entity Recognition
+* Transformer-based NLP
+* Improved OCR
+* Time-series analysis
+* SHAP-based explainability
+* Patient authentication
+* Doctor authentication
+* Role-based access control
+* Secure deployment
+* Notification system
+* Mobile application
+
+---
+
+# 👤 Author
 
 **Varshini A**
 
 M.Sc. Applied Data Science
+SRM University, Ramapuram
 
-Python | SQL | Power BI | Data Analytics
+---
+
+# Disclaimer
+
+CareTrack is an academic project developed for educational and demonstration purposes.
+
+The system does not provide medical diagnosis, treatment recommendations, or emergency medical advice.
+
+Any monitoring indication should be reviewed by an appropriately qualified healthcare professional.
